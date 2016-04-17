@@ -19,7 +19,7 @@ ReactDOM.render(
     <br />
     <JiangliComponent />
     <br />
-    <CommentBox comments={comments} />
+    <CommentBox url="../comments.json" pollInterval={2000} />
   </div>,
   document.getElementById('content')
 )

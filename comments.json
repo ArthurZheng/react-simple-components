@@ -1,17 +1,13 @@
 [
-    {
-        "id": 1388534400000,
-        "author": "Pete Hunt",
-        "text": "Hey there!"
-    },
+  
     {
         "id": 1420070400000,
         "author": "Paul O’Shannessy",
         "text": "React is *great*!"
     },
     {
-        "id": 1459291632254,
-        "author": "Firefox",
-        "text": "Jun Zheng"
+        "id": 145929123632254,
+        "author": "Tencent QQ",
+        "text": "Chinese software giant"
     }
 ]
