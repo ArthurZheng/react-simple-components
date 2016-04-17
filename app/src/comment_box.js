@@ -7,7 +7,7 @@ export default React.createClass({
   render: function(){
     return (
       <div className='comment-box'>
-        <CommentList />
+        <CommentList commentList = {this.props.comments}/>
         <CommentForm />
       </div>
     )
