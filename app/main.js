@@ -15,7 +15,7 @@ import CommentBox from './src/comment_box';
 
 ReactDOM.render(
   <div className='all-components'>
-      <CommentBox url="../comments.json" />
+      <CommentBox url="http://localhost:8084/comments.json" />
   </div>,
   document.getElementById('content')
 )
