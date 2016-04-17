@@ -31,12 +31,13 @@ export default React.createClass({
     this.setState({comments: newComments}); // temporarily fake saved comments;
 
     $.ajax({
-      url:this.props.url,
+      url:'http://localhost:8084/save_comments',
       dataType: 'json',
       type: 'POST',
       data: comment,
       success: function(data){
         this.setState({comments: data});
+        console.log('comment post success');
       }.bind(this),
       error:function(xhr, status, err){
         this.setState({comments: comments}); // if save fail, roll back to original comemnts;

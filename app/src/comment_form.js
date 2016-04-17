@@ -20,7 +20,8 @@ export default React.createClass({
       return;
     }
     //TODO: send request to the server
-    this.props.onCommentSubmit({author: author, text:text})
+    // pass the comment author/text as comment object to the callback function onCommentSubmit defined in CommentBox
+    this.props.onCommentSubmit({author: author, text:text});
     this.setState({author: '', text: ''});
   },
 
@@ -31,6 +32,7 @@ export default React.createClass({
         <input
         type='text'
         placeholder='Your Name: '
+        name='author'
         value={this.state.author}
         onChange={this.handleAuthorChange}
         />
@@ -38,6 +40,7 @@ export default React.createClass({
         type='text'
         placeholder='Your Comment Say Something: '
         value={this.state.text}
+        name='text'
         onChange={this.handleTextChange}
         />
         <input type='submit' value='post' />
